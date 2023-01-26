@@ -1,0 +1,34 @@
+ALGORITHM vecteur_orthogonaux
+VAR
+    n,i:INTEGER
+    valeur:FLOAT
+BEGIN
+        PROCEDURE  dot_product() : 
+        VAR
+            ps:FLOAT
+        BEGIN
+                        vecteur1 :	STRUCT
+                                x1 : INTEGER;
+                                y1 : INTEGER;
+                            END_STRUCT
+                            write("donner les coordonne du vecteur1")
+                            read(vecteur.x1,vecteur.y2)
+                        vecteur2 :	STRUCT
+                                x2 : INTEGER;
+                                y2 : INTEGER;
+                            END_STRUCT
+                            write("donner les coordonne du vecteur2")
+                            read(vecteur.x2,vecteur.y2)
+                            ps=(x1*x2)-(y1*y2)
+        END_PROCEDURE
+            write("dooner le nombre de paire")
+            raed(n)
+            FOR i FROM 0 to n STEP 1 DO
+               valeur= dot_product()
+                if(valeur==0)
+                    write("les deux vecteur  sont  orthogonaux")
+                ELSE
+                    write("les deux vecteur ne sont pas orthogonaux")
+                END_IF
+            END_FOR
+END
